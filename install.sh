@@ -38,3 +38,5 @@ CREATE USER travis IDENTIFIED BY travis;
 GRANT CONNECT, RESOURCE TO travis;
 GRANT EXECUTE ON SYS.DBMS_LOCK TO travis;
 SQL
+
+wget -nv https://raw.githubusercontent.com/accgit/docker/master/docker-oracle/oracle/oracle-instantclient12.2-basic_12.2.0.1.0-2_amd64.deb
