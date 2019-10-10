@@ -1,1 +1,19 @@
 sudo: required
+language: php
+
+env:
+  global:
+    - ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+    - ORACLE_SID=XE
+
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+      addons:
+        apt:
+          packages:
+            - rpm
+            - libaio1
+
+before_install:
