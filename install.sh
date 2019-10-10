@@ -6,6 +6,10 @@ wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/or
 wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.ad
 cat oracle-xe-11.2.0-1.0.x86_64.rpm.zip.* > oracle-xe-11.2.0-1.0.x86_64.rpm.zip
 
+export ORACLE_FILE="oracle-xe-11.2.0-1.0.x86_64.rpm.zip"
+export ORACLE_HOME="/u01/app/oracle/product/11.2.0/xe"
+export ORACLE_SID=XE
+
 ORACLE_RPM="$(basename $ORACLE_FILE .zip)"
 
 cd "$(dirname "$(readlink -f "$0")")"
