@@ -24,3 +24,4 @@ matrix:
 before_install:
   - wget https://raw.githubusercontent.com/accgit/travis-oracle/master/install.sh
   - bash install.sh
+  - bash install.client.sh
