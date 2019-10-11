@@ -6,6 +6,9 @@ cd $BASE_DIR
 sudo apt-get update -qq
 sudo apt-get -y install -qq build-essential libaio1 unzip wget
 
+wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/instantclient-basic-linux.x64-12.1.0.2.0.zip
+wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/instantclient-sdk-linux.x64-12.1.0.2.0.zip
+
 sudo mkdir -p /opt/oracle
 
 sudo unzip -o ./instantclient-basic-linux.x64-12.1.0.2.0.zip -d /opt/oracle
