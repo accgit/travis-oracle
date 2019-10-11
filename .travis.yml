@@ -23,5 +23,5 @@ matrix:
             - libaio1
 
 before_install:
-  - bash install.sh
-  - echo "extension = oci8.so" >> ~/.phpenv/versions/$(phpenv 7.1)/etc/php.ini
+  - bash ./install.sh
+  - bash ./install.client.sh
