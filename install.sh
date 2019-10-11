@@ -9,6 +9,7 @@ cat oracle-xe-11.2.0-1.0.x86_64.rpm.zip.* > oracle-xe-11.2.0-1.0.x86_64.rpm.zip
 export ORACLE_FILE="oracle-xe-11.2.0-1.0.x86_64.rpm.zip"
 export ORACLE_HOME="/u01/app/oracle/product/11.2.0/xe"
 export ORACLE_SID=XE
+export LD_LIBRARY_PATH="/u01/app/oracle/product/11.2.0/xe/lib"
 
 ORACLE_RPM="$(basename $ORACLE_FILE .zip)"
 
