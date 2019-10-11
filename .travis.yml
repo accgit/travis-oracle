@@ -24,4 +24,4 @@ matrix:
 
 before_install:
   - bash install.sh
-  - bash install.client.sh
+  - echo "extension = oci8.so" >> ~/.phpenv/versions/$(phpenv 7.1)/etc/php.ini
