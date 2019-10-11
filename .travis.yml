@@ -24,10 +24,5 @@ matrix:
 
 before_install:
   - bash install.sh
-  - sudo apt-get install alien
-  - wget https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/client/oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm
-  - sudo alien -i oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm
-  - wget https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/client/oracle-instantclient12.2-devel-12.2.0.1.0-1.x86_64.rpm
-  - sudo alien -i oracle-instantclient12.2-devel-12.2.0.1.0-1.x86_64.rpm
-  - echo 'instantclient,/usr/lib/oracle/12.2/client64/lib' | pecl install oci8
-  - echo "extension=oci8.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - bash install.client.sh
+  - echo "extension = oci8.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini

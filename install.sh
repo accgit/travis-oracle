@@ -1,9 +1,9 @@
 #!/bin/sh -e
 
-wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.aa
-wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.ab
-wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.ac
-wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/oracle/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.ad
+wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.aa
+wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.ab
+wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.ac
+wget -nv https://raw.githubusercontent.com/accgit/travis-oracle/master/database/oracle-xe-11.2.0-1.0.x86_64.rpm.zip.ad
 cat oracle-xe-11.2.0-1.0.x86_64.rpm.zip.* > oracle-xe-11.2.0-1.0.x86_64.rpm.zip
 
 export ORACLE_FILE="oracle-xe-11.2.0-1.0.x86_64.rpm.zip"
