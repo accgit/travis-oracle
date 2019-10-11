@@ -21,7 +21,6 @@ matrix:
           packages:
             - rpm
             - libaio1
-            - oci8
 
 before_install:
   - bash install.sh
