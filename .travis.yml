@@ -4,7 +4,7 @@ php:
   - 7.1
 
 script:
-  - echo "skipping tests"
+  - vendor/bin/tester -c tests/php.ini tests -s
 
 matrix:
   include:
