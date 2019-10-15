@@ -18,4 +18,5 @@ before_install:
   - bash test_db.sh
   - sudo dpkg -i oracle-instantclient12.2-basic_12.2.0.1.0-2_amd64.deb
   - sudo dpkg -i oracle-instantclient12.2-devel_12.2.0.1.0-2_amd64.deb
+  - sudo pecl channel-update pecl.php.net
   - echo 'instantclient,/usr/lib/oracle/12.2/client64/lib' | pecl install oci8
