@@ -1,6 +1,10 @@
 {
-  "require-dev": {
-	"nette/tester": "^2.3",
-	"tracy/tracy": "^2.7"
-  }
+	"require": {
+		"php": ">=7.1",
+		"ext-oci8": "*"
+	},
+	"require-dev": {
+		"nette/tester": "^2.3",
+		"tracy/tracy": "^2.7"
+	}
 }
