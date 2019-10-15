@@ -7,8 +7,7 @@ install:
   - composer install --no-interaction --prefer-source
 
 script:
-  - vendor/bin/tester -c tests -s
+  - vendor/bin/tester -c tests/php.ini tests -s
 
 before_install:
   - bash install.oracle.sh
-  - phpenv config-add php.ini
