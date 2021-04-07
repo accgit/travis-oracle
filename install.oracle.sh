@@ -21,4 +21,4 @@ sudo dpkg -i oracle-instantclient12.2-devel_12.2.0.1.0-2_amd64.deb
 
 # Add support OCI8 for PHP
 pecl channel-update pecl.php.net
-echo 'instantclient,/usr/lib/oracle/12.2/client64/lib' | pecl install oci8
+echo 'instantclient,/usr/lib/oracle/12.2/client64/lib' | pecl install oci8-2.2.0
